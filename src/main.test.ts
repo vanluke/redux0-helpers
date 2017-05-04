@@ -11,20 +11,18 @@ describe('Redux0 helpers', () => {
   };
 
   const reducer = ({
-    [LOGIN_SUCCESS]: (state, { payload }) => Object.assign({}, 
-        state,
-        { 
+    [LOGIN_SUCCESS]: (state, { payload }) => 
+      Object.assign({}, state, { 
           isLoading: false,
           user: payload.user,
         },
       ),
-    [LOGIN_FAILS]: (state, { payload }) => Object.assign({}, 
-        state,
-        {
+    [LOGIN_FAILS]: (state, { payload }) => 
+      Object.assign({}, state, {
           isLoading: false,
           error: payload.error,
         },
-    ),
+      ),
   });
 
   it('should reduce LOGIN_SUCCESS', () => {
