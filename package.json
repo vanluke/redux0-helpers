@@ -1,14 +1,13 @@
 {
   "name": "redux0-helpers",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Automate redux action creators, maps object to reducer",
   "main": "lib/main.js",
   "scripts": {
     "test": "node_modules/.bin/jest",
     "build": "node_modules/.bin/webpack -p",
     "prepublish": "npm run lint && npm run test && npm run build",
-    "lint": "node_modules/.bin/tslint -c tslint.json 'src/**/*.ts'",
-    "postinstall": "npm i && npm run build"
+    "lint": "node_modules/.bin/tslint -c tslint.json 'src/**/*.ts'"
   },
   "repository": {
     "type": "git",
