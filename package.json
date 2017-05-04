@@ -1,0 +1,51 @@
+{
+  "name": "redux0-helpers",
+  "version": "0.1.0",
+  "description": "Automate redux action creators, maps object to reducer",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest",
+    "build": "node_modules/.bin/webpack -p",
+    "prepublish": "npm run lint && npm run test && npm run build",
+    "lint": "node_modules/.bin/tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanluke/redux0-helpers.git"
+  },
+  "keywords": [
+    "Redux"
+  ],
+  "author": "Lukasz Gonciarz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanluke/redux0-helpers/issues"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/src/.*\\.test\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "homepage": "https://github.com/vanluke/redux0-helpers#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "clean-webpack-plugin": "^0.1.16",
+    "jest": "^19.0.2",
+    "redux": "^3.6.0",
+    "ts-jest": "^19.0.14",
+    "ts-loader": "^2.0.3",
+    "tslib": "^1.6.1",
+    "tslint": "^5.1.0",
+    "tslint-config-airbnb": "^1.1.1",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.3.2",
+    "webpack": "^2.4.1"
+  }
+}
