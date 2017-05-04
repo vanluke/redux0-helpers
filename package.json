@@ -1,6 +1,6 @@
 {
   "name": "redux0-helpers",
-  "version": "0.1.12",
+  "version": "1.0.0",
   "description": "Automate redux action creators, maps object to reducer",
   "main": "lib/main.js",
   "scripts": {
